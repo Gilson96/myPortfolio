@@ -13,5 +13,6 @@ https://gilson96.github.io/myPortfolio/
 - Git/ GitHub,
 - GitHub Pages,
 
-![Wireframe](https://github.com/Gilson96/myPortfolio/blob/master/src/assets/projects_screenshots/portfolio2.png)
+![Wireframe](https://github.com/Gilson96/myPortfolio/blob/master/src/assets/projects_screenshots/portfolio4.png)
+![Wireframe](https://github.com/Gilson96/myPortfolio/blob/master/src/assets/projects_screenshots/portfolio3.png)
 
