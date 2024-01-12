@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/myPortfolio/static/css/main.90dd5093.css",
+    "main.js": "/myPortfolio/static/js/main.a1fe4359.js",
+    "static/media/delivroo1.png": "/myPortfolio/static/media/delivroo1.301491e4760627cb0d39.png",
+    "static/media/background.jpg": "/myPortfolio/static/media/background.d747d4254a1bf41f648d.jpg",
+    "static/media/AvatarMaker-removebg-preview.png": "/myPortfolio/static/media/AvatarMaker-removebg-preview.eff6087d02d5af60af9f.png",
+    "static/media/weather1.png": "/myPortfolio/static/media/weather1.852e743df023e9fdc30b.png",
+    "static/media/mysql.png": "/myPortfolio/static/media/mysql.a3856056dafb37e0da4c.png",
+    "static/media/laravel.png": "/myPortfolio/static/media/laravel.12ffe688eaea7cac2eba.png",
+    "static/media/javascript.png": "/myPortfolio/static/media/javascript.88dc6b6ebed0888b5783.png",
+    "static/media/expenseTracker.png": "/myPortfolio/static/media/expenseTracker.0362da2b375f785524d6.png",
+    "static/media/react.png": "/myPortfolio/static/media/react.86c8d9eba03e29814d2a.png",
+    "static/media/calculator.png": "/myPortfolio/static/media/calculator.5de061a98a29f5b36ca0.png",
+    "static/media/todo.png": "/myPortfolio/static/media/todo.f0e6b28a7d70d05d9cad.png",
+    "static/media/html.png": "/myPortfolio/static/media/html.cfc135efacae16e66f44.png",
+    "static/media/tic-tac-toe.png": "/myPortfolio/static/media/tic-tac-toe.9e8b248068e5a9d32cf4.png",
+    "static/media/typescript.png": "/myPortfolio/static/media/typescript.4da38a77e13342fb5156.png",
+    "static/media/css.png": "/myPortfolio/static/media/css.5487776c26caddf3f316.png",
+    "static/media/blog_article.png": "/myPortfolio/static/media/blog_article.9582b540d0f71c349f5c.png",
+    "static/media/tailwind.png": "/myPortfolio/static/media/tailwind.da44689ba5779953cb05.png",
+    "static/media/bootstrap.png": "/myPortfolio/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/php.png": "/myPortfolio/static/media/php.06bc4043f105daaf2137.png",
+    "index.html": "/myPortfolio/index.html",
+    "main.90dd5093.css.map": "/myPortfolio/static/css/main.90dd5093.css.map",
+    "main.a1fe4359.js.map": "/myPortfolio/static/js/main.a1fe4359.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90dd5093.css",
+    "static/js/main.a1fe4359.js"
+  ]
+}
