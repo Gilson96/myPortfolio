@@ -1,5 +1,8 @@
-import { useState } from 'react'
-import ProjectRow from './projectRow'
+import { useState, useEffect } from 'react'
+import ProjectsInMobile from './projectsInMobile'
+
+
+// Assets
 import calculator from '../assets/projectsPics/calculator.png'
 import calculatorLogo from '../assets/projectsLogo/calculator_logo.png'
 import expenseTracker from '../assets/projectsPics/expenseTracker.png'
@@ -16,6 +19,7 @@ import delivroo from '../assets/projectsPics/delivroo1.png'
 import delivrooLogo from '../assets/projectsLogo/delivroo_logo.png'
 
 const Projects = ({ back }) => {
+
 
   const frontProjects = [
     {
@@ -34,7 +38,7 @@ const Projects = ({ back }) => {
       github: "https://github.com/Gilson96/expense-tracker",
       screenshot: expenseTracker,
       logo: expenseTrackerLogo,
-      description: "A expense tracker app to managing personal finances"
+      description: "A expense tracker app"
     },
 
     {
@@ -53,7 +57,7 @@ const Projects = ({ back }) => {
       github: "https://github.com/Gilson96/to-do",
       screenshot: toDo,
       logo: toDoLogo,
-      description: "A to-do built with typescript"
+      description: "A to-do list"
     },
   ]
 
@@ -65,7 +69,7 @@ const Projects = ({ back }) => {
       github: "https://github.com/Gilson96/blog-laravel",
       screenshot: blog,
       logo: blogLogo,
-      description: "A article blog, where user can apply CRUD operations on a article and comment."
+      description: "A article blog."
     },
   ]
 
@@ -77,7 +81,7 @@ const Projects = ({ back }) => {
       github: "https://github.com/Gilson96/delivoo_clone-FrontEnd",
       screenshot: delivroo,
       logo: delivrooLogo,
-      description: "My clone version of the Delivroo app"
+      description: "Delivroo-clone app"
     },
     {
       key: 2,
@@ -86,78 +90,94 @@ const Projects = ({ back }) => {
       github: "https://github.com/Gilson96/weather-app",
       screenshot: weather,
       logo: weatherLogo,
-      description: "A weather-app, find the weather on you city"
+      description: "A weather-app"
     },
   ]
 
   return (
-    <div className='flex flex-col h-screen w-full'>
 
-      <button
-        onClick={back}
-        className='flex absolute top-5 right-10 border-3 border-gray-50 p-3 w-40 items-center justify-center text-gray-50 rounded-full shadow shadow-gray-50 hover:translate-y-px hover:shadow-lg hover:shadow-gray-50'
-        id='name-font'
-      >
-        Back
-      </button>
+    
+      <div className='flex flex-col h-screen w-full animate__animated animate__fadeInRight transition ease-in-out'>
 
-      <h1 className='flex justify-center my-28 text-gray-50 text-5xl' id='name-font'>Projects</h1>
+        <button
+          onClick={back}
+          className='flex absolute top-5 right-10 border-3 border-gray-50 p-3 w-40 items-center justify-center text-gray-50 rounded-full shadow shadow-gray-50 hover:translate-y-px hover:shadow-lg hover:shadow-gray-50 max-[425px]:right-6 max-[425px]:p-2 max-[425px]:text-xs max-[425px]:w-20'
+          id='name-font'
+        >
+          Back
+        </button>
 
-      <div className='flex justify-between p-5 m-2'>
-        <h1 className='relative top-7 text-4xl text-gray-50' id='name-font'>Front - End</h1>
-        <div className='flex gap-3'>
-          {frontProjects.map(project => (
-            <ProjectRow
-              name='front - End'
-              project={project.logo}
-              live={project.live}
-              description={project.description}
-              github={project.github}
-              screenshot={project.screenshot}
-              logo={project.logo}
-              title={project.title}
-            />
-          ))}
+        <h1 className='flex justify-center my-28 text-gray-50 text-5xl max-[425px]:text-3xl max-[425px]:mb-2' id='name-font'>
+          Projects
+        </h1>
+
+        <div className='flex flex-col justify-between p-5 m-2'>
+
+          <h1 className='relative top-7 text-4xl text-gray-50 my-3 max-[425px]:text-2xl' id='name-font'>
+            Front - End
+          </h1>
+
+          <div className='flex gap-3 overflow-x-auto'>
+            {frontProjects.map(pim => (
+              <ProjectsInMobile
+                project={pim.logo}
+                live={pim.live}
+                description={pim.description}
+                github={pim.github}
+                screenshot={pim.screenshot}
+                logo={pim.logo}
+                title={pim.title}
+              />
+            ))}
+          </div>
+
+        </div>
+
+        <div className='flex flex-col justify-between p-5 m-2'>
+
+          <h1 className='relative top-7 text-4xl text-gray-50 my-3' id='name-font'>
+            Back - End
+          </h1>
+
+          <div className='flex gap-3 overflow-x-auto'>
+            {backProjects.map(pim => (
+              <ProjectsInMobile
+                project={pim.logo}
+                live={pim.live}
+                description={pim.description}
+                github={pim.github}
+                screenshot={pim.screenshot}
+                logo={pim.logo}
+                title={pim.title}
+              />
+            ))}
+          </div>
+
+        </div>
+
+        <div className='flex flex-col justify-between p-5 m-2'>
+
+          <h1 className='relative top-7 text-4xl text-gray-50 my-3' id='name-font'>
+            Full - Stack
+          </h1>
+
+          <div className='flex gap-3 overflow-x-auto'>
+            {fullProjects.map(pim => (
+              <ProjectsInMobile
+                project={pim.logo}
+                live={pim.live}
+                description={pim.description}
+                github={pim.github}
+                screenshot={pim.screenshot}
+                logo={pim.logo}
+                title={pim.title}
+              />
+            ))}
+          </div>
+
         </div>
       </div>
-
-      <div className='flex justify-between p-5 m-2'>
-        <h1 className='relative top-7 text-4xl text-gray-50' id='name-font'>Back - End</h1>
-        <div className='flex gap-3'>
-          {backProjects.map(project => (
-            <ProjectRow
-              name='Back - End'
-              project={project.logo}
-              live={project.live}
-              description={project.description}
-              github={project.github}
-              screenshot={project.screenshot}
-              logo={project.logo}
-              title={project.title}
-              inlineStyle='bg'
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className='flex justify-between p-5 m-2 mb-3'>
-        <h1 className='relative top-7 text-4xl text-gray-50' id='name-font'>Full - Stack</h1>
-        <div className='flex gap-3'>
-          {fullProjects.map(project => (
-            <ProjectRow
-              name='Full - Stack'
-              project={project.logo}
-              live={project.live}
-              description={project.description}
-              github={project.github}
-              screenshot={project.screenshot}
-              logo={project.logo}
-              title={project.title}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    
   )
 }
 

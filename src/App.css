@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import 'animate.css';
 
 #name-font{
     font-family: 'Rubik Maps', system-ui;
@@ -13,4 +14,8 @@
 
 #card-font{
     font-family: 'Nunito', sans-serif;
+}
+
+#contact-icon{
+    font-size: 50px;
 }
