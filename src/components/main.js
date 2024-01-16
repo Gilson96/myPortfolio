@@ -78,7 +78,7 @@ const Main = ({ goProjects }) => {
           <a className='transition ease-in-out  hover:-translate-y-1 hover:scale-110' href='https://github.com/Gilson96'>
             <img src={github} alt='github' className='h-16 w-16 max-[425px]:h-6 max-[425px]:w-6' />
           </a>
-          <a className='transition ease-in-out  hover:-translate-y-1 hover:scale-110' href='ht-tps://www.linkedin.com/in/gilson-de-almeida-a51ba1194/'>
+          <a className='transition ease-in-out  hover:-translate-y-1 hover:scale-110' href='https://www.linkedin.com/in/gilson-de-almeida-a51ba1194/'>
             <img src={linked} alt='linked' className='h-16 w-16  max-[425px]:h-6 max-[425px]:w-6' />
           </a>
           <a className='transition ease-in-out  hover:-translate-y-1 hover:scale-110' href='mailto:grafael99@gmail.com'>
@@ -86,6 +86,7 @@ const Main = ({ goProjects }) => {
           </a>
         </div>
       </div>
+      
    
   )
 }
