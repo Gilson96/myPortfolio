@@ -135,7 +135,7 @@ const Projects = ({ back }) => {
 
         <div className='flex flex-col justify-between p-5 m-2'>
 
-          <h1 className='relative top-7 text-4xl text-gray-50 my-3' id='name-font'>
+          <h1 className='relative top-7 text-4xl text-gray-50 my-3 max-[425px]:text-2xl' id='name-font'>
             Back - End
           </h1>
 
@@ -157,7 +157,7 @@ const Projects = ({ back }) => {
 
         <div className='flex flex-col justify-between p-5 m-2'>
 
-          <h1 className='relative top-7 text-4xl text-gray-50 my-3' id='name-font'>
+          <h1 className='relative top-7 text-4xl text-gray-50 my-3 max-[425px]:text-2xl' id='name-font'>
             Full - Stack
           </h1>
 
