@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.5d1e6f53.css",
-    "main.js": "/myPortfolio/static/js/main.64dcae62.js",
+    "main.js": "/myPortfolio/static/js/main.dbeb1d3e.js",
     "static/media/health_care_1.png": "/myPortfolio/static/media/health_care_1.f8c3653cafb5ed0735b1.png",
     "static/media/health_care_2.png": "/myPortfolio/static/media/health_care_2.13a5828e23120b7c4d83.png",
     "static/media/health_care_8.png": "/myPortfolio/static/media/health_care_8.06de4d759dba2bc82ba8.png",
@@ -23,10 +23,10 @@
     "static/media/mongodb-icon-1.svg": "/myPortfolio/static/media/mongodb-icon-1.1aca075d5cce0819fea7ea0902d94ce4.svg",
     "static/media/tailwind-css-2.svg": "/myPortfolio/static/media/tailwind-css-2.315d0ac2a2708d5f06972906113dfbf1.svg",
     "main.5d1e6f53.css.map": "/myPortfolio/static/css/main.5d1e6f53.css.map",
-    "main.64dcae62.js.map": "/myPortfolio/static/js/main.64dcae62.js.map"
+    "main.dbeb1d3e.js.map": "/myPortfolio/static/js/main.dbeb1d3e.js.map"
   },
   "entrypoints": [
     "static/css/main.5d1e6f53.css",
-    "static/js/main.64dcae62.js"
+    "static/js/main.dbeb1d3e.js"
   ]
 }
