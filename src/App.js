@@ -1,29 +1,19 @@
 import './App.css';
-import { useState } from 'react'
-import Main from './components/main'
-import Projects from './components/projects'
-import background from './assets/background.jpg'
-
+import Menu from './components/Menu'
+import HomePage from './components/HomePage'
+import Projects from './components/Projects';
+import useScreenSize from './components/useScreenSize';
 
 function App() {
-  const [toggle, setToggle] = useState(true);
-
-  const onBack = () => {
-    setToggle(!toggle)
-  }
-
-  const onGoProjects = () => {
-    setToggle(!toggle)
-  }
+  const screenSize = useScreenSize()
 
   return (
-    <div className={`bg-[url(${background})] h-screen w-full bg-center bg-cover relative overflow-auto`}>
-      
-        {toggle && <Main goProjects={onGoProjects} />}
-      
-  
-        {!toggle && <Projects back={onBack} />}
-      
+    <div className=''>
+      <Menu />
+      <div className={`${screenSize.width < 1024 && 'flex flex-col gap-96'}`}>
+        <HomePage />
+        <Projects />
+      </div>
     </div>
   );
 }

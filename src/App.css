@@ -1,21 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
 
-#name-font{
-    font-family: 'Rubik Maps', system-ui;
-    text-shadow: 2px 2px 4px #000000;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+   background-color: #E0E1DD;
 }
 
-#general-font{
-    font-family: 'Nunito', sans-serif;
-    text-shadow: 2px 2px 4px #000000;
+#logoFont {
+    font-family: "Playwrite GB J", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #778DA9;
 }
 
-#card-font{
-    font-family: 'Nunito', sans-serif;
+#textFont{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-#contact-icon{
-    font-size: 50px;
+
+.animate__animated.animate__zoomIn{
+    --animate-duration: 0.1s;
 }
+
+
+
+/* 
+dark blue: #0D1B2A
+medium blue: #1B263B
+medium light blue: #415A77
+light blue: #778DA9
+grey: #E0E1DD
+*/
