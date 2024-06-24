@@ -22,7 +22,7 @@ const HomePage = () => {
                     <p className='text-[#0D1B2A] text-justify leading-10 text-lg' id='textFont'>My name is Gilson Jeremias, and I am reaching out to introduce myself as a passionate and motivated junior full-stack developer with a strong foundation in React and Nodejs, eager to begin my professional journey in the tech industry. Although I am new to the professional world, I have spent the past 3 of years deeply immersed in coding and development through self-study, online courses, and personal projects. </p>
                     <div className='flex'>
                         <button className={`${screenSize.width < 1024? 'w-[100%]' : 'w-[40%]'} flex items-center justify-center border border-slate-300 h-auto p-5 bg-[#415A77] rounded shadow font-bold text-[#E0E1DD] gap-2 mt-5 hover:bg-[#778DA9]`}>
-                            <a href='/' className='flex '>Download my CV</a>
+                            <a href='https://drive.google.com/file/d/13Iu-hq8bPkVirwjbVwFQtlSbvBKjwHLR/view' className='flex '>Download my CV</a>
                             <ArrowRightCircleIcon className='h-5 w-5' />
                         </button>
                     </div>
